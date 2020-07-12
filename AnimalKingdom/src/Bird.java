@@ -1,6 +1,6 @@
-public class Bird extends Animal{
+class Bird extends Animal{
 
-    public Bird(int number, String name, int yearDiscovered) {
+    Bird(int number, String name, int yearDiscovered) {
         super(number, name, yearDiscovered);
     }
 

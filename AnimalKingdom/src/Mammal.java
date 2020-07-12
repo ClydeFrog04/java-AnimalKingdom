@@ -1,7 +1,7 @@
-public class Mammal extends Animal {
+class Mammal extends Animal {
 
 
-    public Mammal(int number, String name, int yearDiscovered) {
+    Mammal(int number, String name, int yearDiscovered) {
         super(number, name, yearDiscovered);
     }
 

@@ -10,6 +10,7 @@ public abstract class Animal {
         this.yearDiscovered = yearDiscovered;
     }
 
+    //public methods
     public void eat(String food){
         System.out.println(String.format("%s ate %s", this.name, food));
     }
@@ -18,19 +19,27 @@ public abstract class Animal {
         return number;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public int getYearDiscovered() {
+    int getYearDiscovered() {
         return yearDiscovered;
     }
 
+    //abstract methods
     abstract String move();
 
     abstract String breath();
 
     abstract String reproduce();
+
+    //overrides
+    @Override
+    public String toString(){
+        return String.format("Animal id: %d Name: %s Year Discovered: %d Movement Type: %s Breaths by: %s Reproduces by: %s%n",
+                this.number, this.name, this.yearDiscovered, this.move(), this.breath(), this.reproduce());
+    }
 }
 
 
